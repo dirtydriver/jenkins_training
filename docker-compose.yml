@@ -1,0 +1,11 @@
+version: '3.0'
+services:
+    jenkins-master:
+        image: jenkins
+        
+        ports:
+            - "8090:8080"
+
+        volumes:
+        - "/opt/jenkins/:/var/jenkins_home"
+ 
